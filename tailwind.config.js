@@ -9,6 +9,7 @@ module.exports = {
         transparent: "rgba(0,0,0,0)",
         primary: "rgba(2, 132, 199)",
         background: "#f3f4f6",
+        gray: "#f3f4f6",
         success: "#198754",
         danger: "#dc3545",
         warning: "#ffc107",

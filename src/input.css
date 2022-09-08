@@ -27,6 +27,13 @@
   .non-floating-dropdown-menu {
     @apply flex px-2;
   }
+  .btn {
+    @apply text-sm text-white p-2 rounded-md;
+  }
+
+  .btn-primary {
+    @apply bg-primary;
+  }
 
   /* Hide scrollbar for Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {

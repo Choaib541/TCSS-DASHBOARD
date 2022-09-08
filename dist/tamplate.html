@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets//tailwind/output.css" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/boxicons/css/boxicons.min.css"
+    />
+  </head>
+
+  <body class="bg-background text-black">
+    <section class="w-screen h-screen">
+      <nav class="h-[80px] relative">
+        <div
+          class="bg-white z-20 absolute w-full drop-shadow-lg flex justify-between p-4 items-center"
+        >
+          <!-- | Trigger and avatar container | -->
+          <div class="flex items-center">
+            <!-- | Trigger | -->
+            <div class="text-xl flex items-center">
+              <button class="lg:hidden mr-4 flex items-center nav-triiger">
+                <i class="bx bx-menu text-3xl"></i>
+              </button>
+              <a href="#" class="font-semibold">CAMADO</a>
+            </div>
+            <!-- | Search | -->
+            <div class="ml-10 hidden md:block">
+              <form>
+                <input
+                  class="input-control"
+                  placeholder="Search Here..."
+                  type="text"
+                />
+              </form>
+            </div>
+          </div>
+          <!-- | Avatar | -->
+          <div class="dropdown relative">
+            <!-- | Image Container | -->
+            <div class="dropdown-trigger">
+              <img
+                class="rounded-full w-full h-full"
+                src="./assets/images/avatar.jpg"
+                alt=""
+              />
+            </div>
+            <!-- | Links container | -->
+            <div class="dropdown-menu hidden">
+              <ul>
+                <li class="border-b hover:border-primary">
+                  <a class="block w-full h-full py-2 px-4" href="#">Profile</a>
+                </li>
+                <li class="border-b hover:border-primary">
+                  <a class="block w-full h-full py-2 px-4" href="#">Settings</a>
+                </li>
+                <li class="border-b hover:border-primary">
+                  <a class="block w-full h-full py-2 px-4" href="#">Logout</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="flex items-stretch h-[calc(100vh_-_80px)] relative">
+        <aside
+          class="w-[210px] absolute lg:relative h-screen bg-white lg:h-auto drop-shadow-lg overflow-y-scroll no-scrollbar transition-transform -translate-x-[300px] lg:translate-x-0"
+        >
+          <ul class="p-4 pr-5 pt-0">
+            <li class="my-3 hover:text-primary">
+              <a href="">
+                <i class="text-xl bx bxs-dashboard"></i>
+                <span class="w-full px-2">Dashboard</span>
+              </a>
+            </li>
+            <!-- / non-floating-dropdown / -->
+            <li class="non-floating-dropdown">
+              <!-- / DropDown Trigger / -->
+              <div class="non-floating-dropdown-trigger select-none">
+                <i class="text-xl bx bx-cube-alt"></i>
+                <span class="w-full px-2">UI</span>
+                <i class="bx bxs-chevron-down text-xs"></i>
+              </div>
+              <!-- / DropDown menu / -->
+              <div class="non-floating-dropdown-menu hidden">
+                <div class="bg-primary w-[3px]"></div>
+                <ul class="pl-5">
+                  <li class="py-2">
+                    <a href="" class="hover:text-primary flex items-center">
+                      <i class="text-xl bx bx-cube-alt"></i>
+                      <span class="ml-2">Navbar</span>
+                    </a>
+                  </li>
+                  <li class="py-2">
+                    <a href="" class="hover:text-primary flex items-center">
+                      <i class="text-xl bx bx-cube-alt"></i>
+                      <span class="ml-2">Footer</span>
+                    </a>
+                  </li>
+                  <li class="py-2">
+                    <a href="" class="hover:text-primary flex items-center">
+                      <i class="text-xl bx bx-cube-alt"></i>
+                      <span class="ml-2">Buttons</span>
+                    </a>
+                  </li>
+                  <li class="py-2">
+                    <a href="" class="hover:text-primary flex items-center">
+                      <i class="text-xl bx bx-cube-alt"></i>
+                      <span class="ml-2">Notifications</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </aside>
+        <section class="lg:w-[calc(100vw_-_220px)] p-4">
+          <!-- | Your Content | -->
+          <!-- | Your Content | -->
+        </section>
+      </section>
+    </section>
+    <!-- | index.js | -->
+    <script src="./assets/scripts/template.js" type="module"></script>
+  </body>
+</html>
